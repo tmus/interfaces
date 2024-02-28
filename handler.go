@@ -6,6 +6,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type HabitRepository interface {
+	GetAll() []Habit
+}
+
 type HabitHandler struct {
 	repository HabitRepository
 }

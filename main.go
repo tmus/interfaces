@@ -8,10 +8,6 @@ type Habit struct {
 	Title string
 }
 
-type HabitRepository interface {
-	GetAll() []Habit
-}
-
 func main() {
 	repository := NewInMemoryHabitRepository()
 
